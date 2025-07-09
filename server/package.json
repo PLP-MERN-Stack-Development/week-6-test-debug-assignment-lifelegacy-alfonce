@@ -1,0 +1,22 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^29.6.1",
+    "supertest": "^6.3.3",
+    "mongodb-memory-server": "^8.14.0",
+    "babel-jest": "^29.6.1",
+    "@babel/preset-env": "^7.22.10"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "roots": ["<rootDir>/tests"],
+    "transform": {
+      "^.+\\.js$": "babel-jest"
+    }
+  }
+}
